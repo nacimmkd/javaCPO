@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="P:\Bureau\javaCPO\enonceS0-exo2"/>
+			<item value="P:\Bureau\javaCPO\enonceS0-exo1"/>
 			<item value="/home/nacim/Documents/Exercices CPO M3IR 2023 - ETUD/enoncesTP/enonceS0-exo1"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">

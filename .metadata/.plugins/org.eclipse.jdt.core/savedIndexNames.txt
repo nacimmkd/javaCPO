@@ -1,20 +1,4 @@
-INDEX VERSION 1.134+/home/nacim/Documents/javaCPO/.metadata/.plugins/org.eclipse.jdt.core
-1161336701.index
-2288498969.index
-1188028673.index
-944469216.index
-171420459.index
-2747048248.index
-569369970.index
+INDEX VERSION 1.131+P:\Bureau\javaCPO\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-1404066285.index
-234773825.index
-2745462920.index
-3858539401.index
-2569220188.index
-1453976729.index
-156750903.index
-2150239005.index
-3121385245.index
-853052497.index
-4184433321.index
+2896410540.index
+900392470.index
