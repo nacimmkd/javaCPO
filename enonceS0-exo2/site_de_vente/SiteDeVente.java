@@ -3,6 +3,8 @@ package site_de_vente;
 import java.util.ArrayList;
 import java.util.List;
 
+import articles.IArticle;
+
 public class SiteDeVente {
 	private ArrayList<IArticle> articles = new ArrayList<>();
 	
@@ -20,7 +22,7 @@ public class SiteDeVente {
 		List<IArticle> pourTous = new ArrayList<>();
 		
 		for (IArticle a : articles) {
-			if (!a.getPourAdultes()) {
+			if (!a.pourAdultes()) {
 				pourTous.add(a);
 			}
 		}

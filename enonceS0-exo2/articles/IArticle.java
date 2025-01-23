@@ -1,8 +1,8 @@
-package site_de_vente;
+package articles;
 
 public interface IArticle {
 	String getTitre();
 	double getPrixHT();
 	double getPrixTTC();
-	boolean getPourAdultes();
+	boolean pourAdultes();
 }

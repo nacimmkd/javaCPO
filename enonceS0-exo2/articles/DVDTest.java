@@ -18,8 +18,8 @@ class DVDTest {
 		assertEquals(misérablesDVD12.getAgeMini(), 12);
 		
 		assertEquals(misérablesDVD12, misérablesDVD12);
-		//assertEquals(misérablesDVD12, misérablesDVD12bis);
-		//assertEquals(misérablesDVD12bis, misérablesDVD12);
+		assertEquals(misérablesDVD12, misérablesDVD12bis);
+		assertEquals(misérablesDVD12bis, misérablesDVD12);
 		assertFalse(misérablesDVD6.equals(misérablesDVD12));
 	}
 

@@ -2,8 +2,6 @@ package articles;
 
 import java.util.Objects;
 
-import site_de_vente.IArticle;
-
 public class DVD implements IArticle {
 	private String titre;
 	private int ageMini;
@@ -21,7 +19,7 @@ public class DVD implements IArticle {
 	@Override
 	public double getPrixTTC() { return prixHT *(1.0 + taxe); }
 	public int getAgeMini() { return ageMini; }
-	public boolean getPourAdultes() {return ageMini > 6;}
+	public boolean pourAdultes() {return ageMini > 6;}
 	
 	@Override
 	public String toString() { 

@@ -2,8 +2,6 @@ package articles;
 
 import java.util.Objects;
 
-import site_de_vente.IArticle;
-
 public class Livre implements IArticle {
 	private String titre;
 	private double prixHT;
@@ -20,7 +18,7 @@ public class Livre implements IArticle {
 	public double getPrixHT() { return prixHT; }
 	@Override
 	public double getPrixTTC() { return prixHT *(1.0 + taxe); }
-	public boolean getPourAdultes () { return pourAdultes; }
+	public boolean pourAdultes () { return pourAdultes; }
 	@Override
 	public String toString() { 
 		return "Livre "+ titre + (pourAdultes? " pour adultes":" pour tous")+ " : "+getPrixTTC()+"€";
