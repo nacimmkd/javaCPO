@@ -16,9 +16,9 @@ class LivreTest {
 		assertEquals(misérables1.getTitre(), "Les Misérables");
 		assertEquals(misérables1.getPrixHT(),8.0, 0.001);
 		assertEquals(misérables1.getPrixTTC(),8.4, 0.001);
-		assertFalse(misérables1.getPourAdultes());
+		assertFalse(misérables1.pourAdultes());
 		
-		assertTrue(trone.getPourAdultes());
+		assertTrue(trone.pourAdultes());
 		
 		// assertEquals(misérables1, misérables2); 
 		assertFalse(misérables1.equals(new DVD("Les Misérables", 0, 8.0)));
