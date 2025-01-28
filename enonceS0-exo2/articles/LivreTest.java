@@ -20,7 +20,7 @@ class LivreTest {
 		
 		assertTrue(trone.pourAdultes());
 		
-		// assertEquals(misérables1, misérables2); 
+		assertEquals(misérables1, misérables2); 
 		assertFalse(misérables1.equals(new DVD("Les Misérables", 0, 8.0)));
 	}
 

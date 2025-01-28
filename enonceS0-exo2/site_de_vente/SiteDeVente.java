@@ -3,8 +3,6 @@ package site_de_vente;
 import java.util.ArrayList;
 import java.util.List;
 
-import articles.IArticle;
-
 public class SiteDeVente {
 	private ArrayList<IArticle> articles = new ArrayList<>();
 	

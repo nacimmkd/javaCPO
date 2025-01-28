@@ -2,6 +2,8 @@ package articles;
 
 import java.util.Objects;
 
+import site_de_vente.IArticle;
+
 public class DVD implements IArticle {
 	private String titre;
 	private int ageMini;

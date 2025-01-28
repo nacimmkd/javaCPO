@@ -1,5 +1,7 @@
 package articles;
 
+import site_de_vente.IArticle;
+
 public class BlueRay extends DVD implements IArticle{
 	
 	private static double taxe = 0.30;

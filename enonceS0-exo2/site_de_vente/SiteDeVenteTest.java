@@ -9,7 +9,6 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 import articles.DVD;
-import articles.IArticle;
 import articles.Livre;
 
 class SiteDeVenteTest {

@@ -1,4 +1,4 @@
-package articles;
+package site_de_vente;
 
 public interface IArticle {
 	String getTitre();

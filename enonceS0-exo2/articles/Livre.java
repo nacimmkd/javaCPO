@@ -2,6 +2,8 @@ package articles;
 
 import java.util.Objects;
 
+import site_de_vente.IArticle;
+
 public class Livre implements IArticle {
 	private String titre;
 	private double prixHT;
