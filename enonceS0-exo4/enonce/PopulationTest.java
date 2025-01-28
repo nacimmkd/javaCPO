@@ -3,8 +3,8 @@ package enonce;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import population.TerritoireNonAjoutableEx;
 import territoires.Region;
-import territoires.TerritoireNonAjoutableEx;
 import territoires.Ville;
 
 class PopulationTest {

@@ -1,0 +1,10 @@
+/Commande.class
+/ICommande.class
+/commandeDecorator.class
+/CommandeOrdinaireDecorator.class
+/CommandeOrdinaire.class
+/CommandeUrgente.class
+/commandeAvecPapierOrdinaire.class
+/CommandeDecorator.class
+/commandeAvecPapierCadeau.class
+/CommandeTest.class

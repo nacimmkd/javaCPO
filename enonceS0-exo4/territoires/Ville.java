@@ -1,5 +1,6 @@
 package territoires;
 
+import enonce.TerritoireNonAjoutableEx;
 import population.ITerritoire;
 
 public class Ville implements ITerritoire{
@@ -13,4 +14,15 @@ public class Ville implements ITerritoire{
 	
 	public int getPop()  { return pop; }
 	public String getNom()  { return nom; }
+
+	@Override
+	public void ajouter(ITerritoire t) throws TerritoireNonAjoutableEx {
+		throw new TerritoireNonAjoutableEx("On peut pas cree une ville dans une ville");
+		
+	}
+
+	
+	
+	
+	
 }
