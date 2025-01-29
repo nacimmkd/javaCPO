@@ -17,7 +17,7 @@ public class Ville implements ITerritoire{
 
 	@Override
 	public void ajouter(ITerritoire t) throws TerritoireNonAjoutableEx {
-		throw new TerritoireNonAjoutableEx("On peut pas cree une ville dans une ville");
+		throw new TerritoireNonAjoutableEx("On peut pas ajouter une ville dans une ville");
 		
 	}
 

@@ -10,11 +10,15 @@ import territoires.Ville;
 class PopulationTest {
 
 	@Test
-	void test() throws TerritoireNonAjoutableEx{
+	void test(){
 		ITerritoire idf = new Region("IDF");
 		assertEquals("IDF", idf.getNom());
 		assertEquals(0, idf.getPop());
-		idf.ajouter(new Ville("Paris", 2000000));
+		try {
+			idf.ajouter(new Ville("Paris", 2000000));
+		} catch (TerritoireNonAjoutableEx e) {
+			e.printStackTrace();
+		}
 		assertEquals(2000000, idf.getPop());
 		
 		Region d93 = new Region("93");
