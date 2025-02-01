@@ -18,6 +18,8 @@ class CommandeTest {
 	private static ICommande urgenteEmballageCadeau = new commandeAvecPapierCadeau(urgenteSansEmballage);
 	private static ICommande urgenteEmballageCadeauEtOrdinaire = new commandeAvecPapierOrdinaire(urgenteEmballageCadeau);
 	
+	private static ICommande d = new commandeAvecPapierCadeau(new commandeAvecPapierCadeau(ordinaireEmballageOrdinaireEtCadeau));
+	
 	
 	@Test
 	void testOrdinaire() {	
@@ -29,6 +31,9 @@ class CommandeTest {
 		
 		assertEquals(ordinaireEmballageOrdinaireEtCadeau.getNumero(), 1);
 		assertEquals(ordinaireEmballageOrdinaireEtCadeau.getMontant(), 28. , 0.01); // 20 + 2 + 6
+		
+		assertEquals(d.getNumero(), 1);
+		assertEquals(d.getMontant(), 41. , 0.01); // 20 + 2 + 6
 	}
 	
 	@Test
