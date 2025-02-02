@@ -14,7 +14,7 @@ public abstract class Commande {
 		return client;
 	}
 
-	public double getMontantTTC() {	
+	public final double getMontantTTC() {	
 		double ttc = getMontantHT();
 		ttc -= getMontantHT() * getTauxReduction();			
 		return ttc + getMontantHT()* getTVA();
