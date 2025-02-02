@@ -1,23 +1,22 @@
 package Etats;
 
 import java.util.Date;
-
-import commande.Commande;
+import commande.IEtatCommande;
 
 
 public class EtatCde implements IEtatCommande{
 	@Override
-	public IEtatCommande payer(Commande cde) throws CdeNonPayableEx {
+	public IEtatCommande payer() throws CdeNonPayableEx {
 		throw new CdeNonPayableEx();
 	}
 
 	@Override
-	public IEtatCommande livrer(Commande cde) throws CdeNonLivrableEx {
+	public IEtatCommande livrer() throws CdeNonLivrableEx {
 		throw new CdeNonLivrableEx();
 	}
 
 	@Override
-	public IEtatCommande rembourser(Commande cde) throws CdeNonRemboursableEx {
+	public IEtatCommande rembourser() throws CdeNonRemboursableEx {
 		throw new CdeNonRemboursableEx();
 	}
 

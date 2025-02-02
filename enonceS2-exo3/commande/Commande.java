@@ -5,7 +5,6 @@ import java.util.Date;
 import Etats.CdeNonLivrableEx;
 import Etats.CdeNonRemboursableEx;
 import Etats.Disponible;
-import Etats.IEtatCommande;
 
 public class Commande {
 	private int numero;
@@ -26,22 +25,13 @@ public class Commande {
 		return this.etat.getDateLivraison();
 	}
 	public void payer() {
-//		if (payee)
-//		   throw new CdeNonPayableEx();
-//		this.payee = true;
-		etat = this.etat.payer(this);
+		etat = this.etat.payer();
 	}
 	public void livrer() throws CdeNonLivrableEx {
-//		if (! this.payee || this.dateLiv != null)
-//			throw new CdeNonLivrableEx();
-//		this.dateLiv = new Date();
-		etat = this.etat.livrer(this);
+		etat = this.etat.livrer();
 	}
 	public void rembourser() throws CdeNonRemboursableEx {
-//		if (! this.payee || this.dateLiv != null)
-//			throw new CdeNonRemboursableEx ();
-//		this.payee = false;
-		etat = this.etat.rembourser(this);
+		etat = this.etat.rembourser();
 	}
 	
 }

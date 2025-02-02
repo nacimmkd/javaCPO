@@ -1,12 +1,11 @@
 package Etats;
 
-import java.util.Date;
-
-import commande.Commande;
+import commande.IEtatCommande;
 
 public class Remboursee extends EtatCde{
+	
 	@Override
-	public IEtatCommande payer(Commande cde){
+	public IEtatCommande payer(){
 		return new Payee();
 	}
 }
