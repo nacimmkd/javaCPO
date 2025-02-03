@@ -41,7 +41,6 @@ public abstract class Etat implements IEtat{
         System.out.println("Impossible de retirer la carte: pas de carte dans le distributeur");
         return this;
     }
-
     
     
 }
