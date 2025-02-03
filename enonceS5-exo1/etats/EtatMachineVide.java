@@ -3,34 +3,13 @@ package etats;
 import distributeur.Carte;
 import distributeur.Distributeur;
 import distributeur.Etat;
-import distributeur.IEtat;
 
-public class EtatAttenteOperation extends Etat {
+public class EtatMachineVide extends Etat{
 
-	public EtatAttenteOperation(Distributeur dist) {
+	public EtatMachineVide(Distributeur dist) {
 		super(dist);
-	}	
-
-	@Override
-	public Etat retirer_argent(int somme){
-
-		if (d.estVide()) {
-			System.out.println("Le distributeur est vide");
-			return new EtatMachineVide(d);
-		}
-		
-		Carte c = d.getCarte();
-		if (c.getSolde() >= somme && d.getFonds() >= somme) {
-			d.subFonds(somme);
-			c.retireDeCompte(somme);
-			System.out.println("Demande de retrait de " + somme + "euro, Effectuée");
-			return new EtatAttenteRetrait(d);
-		}else {
-			System.out.println("Solde insuffisant pour le retrait");
-			return this;
-		}
 	}
-
+	
 	@Override
 	public Etat consulter_solde(){
 		Carte c = d.getCarte();
@@ -43,7 +22,8 @@ public class EtatAttenteOperation extends Etat {
 		Carte c = d.getCarte();
 		c.ajouteSolde(somme);	//ajoute d'argents dans le solde de carte
 		d.addFonds(somme); // mais aussi ajoute de d'argent dans la machine
-		return this;
+		System.out.println("Ajoute de " + somme + " , Effectuée");
+		return new EtatAttenteOperation(d);
 	}
 
 	@Override
@@ -52,7 +32,6 @@ public class EtatAttenteOperation extends Etat {
 		d.setCarte(null);
 		return new EtatPasDeCarte(d);
 	}
-
 
 
 }

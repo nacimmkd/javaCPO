@@ -12,7 +12,7 @@ public class EtatPasDeCarte extends Etat {
 	
 	@Override
 	public Etat inserer_carte(Carte c) {  
-		System.out.println("Carte inseree");
+		System.out.println("Carte inserée");
 		d.setCarte(c);
 		return new EtatCarteInseree(d);
     }

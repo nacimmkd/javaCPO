@@ -19,7 +19,7 @@ public class EtatCarteInseree extends Etat{
 				System.out.println("Code Bon ... Faite votre operation");
 				return new EtatAttenteOperation(d);
 			} else {
-				System.err.println("code pas bon , entrez a nouveau le code ");
+				System.out.println("code pas bon , entrez a nouveau le code ");
 				carte.failed_code();
 				return this;			
 			}

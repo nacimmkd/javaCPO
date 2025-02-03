@@ -2,6 +2,7 @@ package etats;
 
 import distributeur.Distributeur;
 import distributeur.Etat;
+import distributeur.IEtat;
 
 public class EtatAttenteRetrait extends Etat {
 
@@ -11,9 +12,9 @@ public class EtatAttenteRetrait extends Etat {
 	
 	@Override
 	public Etat retirer_carte(){
-		System.out.println("Effectuer... Fonds de votre compte apres retrait : " + d.getFonds());
-		System.out.println("N'oubliez pas votre carte, à bientot");
-        return new EtatPasDeCarte(d);
-    }
-
+		System.out.println("Carte retirée, à bientot");
+		d.setCarte(null);
+		return new EtatPasDeCarte(d);
+	}
+	
 }
