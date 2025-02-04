@@ -21,7 +21,7 @@ class TestsCommande {
 
 	@Test
 	void testCommandeFrancaise() {		
-		CommandeFrancaise c1 = new CommandeFrancaise(1, "Automobile", tintin);
+		CommandeFrancaise c1 = new CommandeFrancaise(1, tintin);
 		c1.ajouterProduit(p1);
 		c1.ajouterProduit(p2);
 		
@@ -29,7 +29,7 @@ class TestsCommande {
 		assertEquals(100 - (100*0.1) + (100*0.2), c1.getMontantTTC());
 		
 		// autre test
-		CommandeFrancaise c2 = new CommandeFrancaise(1, "Automobile", nacim);
+		CommandeFrancaise c2 = new CommandeFrancaise(1, nacim);
 		c2.ajouterProduit(p1);
 		c2.ajouterProduit(p2);
 		

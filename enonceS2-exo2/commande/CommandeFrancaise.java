@@ -7,9 +7,9 @@ public class CommandeFrancaise extends Commande {
 	private List<Produit> produits = new ArrayList<>(); // produits commandes du secteur d'activite de la commande 	
 	private static double reduction = 0.1;				// taux unique applique sur le montant HT des commandes de clients fidele
 	
-	public CommandeFrancaise(int numero, String secteur, Client client) {
+	public CommandeFrancaise(int numero, Client client) {
 		super(numero,client);			
-	}	
+	}
 	
 	public void ajouterProduit(Produit p) {
 		if (!this.produits.isEmpty() && !this.produits.get(0).getSecteur().equals(p.getSecteur()))

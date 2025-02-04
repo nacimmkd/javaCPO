@@ -1,7 +1,8 @@
 package territoires;
 
-import enonce.TerritoireNonAjoutableEx;
 import population.ITerritoire;
+import population.TerritoireNonAjoutableEx;
+
 
 public class Ville implements ITerritoire{
 	private String nom;

@@ -2,8 +2,6 @@ package territoires;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import enonce.TerritoireNonAjoutableEx;
 import population.ITerritoire;
 
 public class Region implements ITerritoire{

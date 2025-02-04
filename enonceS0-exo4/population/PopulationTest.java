@@ -2,8 +2,6 @@ package population;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
-import enonce.TerritoireNonAjoutableEx;
 import territoires.Region;
 import territoires.Ville;
 

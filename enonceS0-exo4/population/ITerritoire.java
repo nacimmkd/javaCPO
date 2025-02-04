@@ -1,6 +1,6 @@
 package population;
 
-import enonce.TerritoireNonAjoutableEx;
+
 
 public interface ITerritoire {
 	String getNom();

@@ -1,6 +1,5 @@
 package population;
 
-import enonce.TerritoireNonAjoutableEx;
 
 public class Population {
 

@@ -3,6 +3,9 @@ package commande;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import typesCommande.CommandeFrancaise;
+import typesCommande.CommandeInternationale;
+
 class TestsCommande {
 	
 	@Test

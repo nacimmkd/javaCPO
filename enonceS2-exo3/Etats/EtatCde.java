@@ -5,6 +5,7 @@ import commande.IEtatCommande;
 
 
 public class EtatCde implements IEtatCommande{
+	
 	@Override
 	public IEtatCommande payer() throws CdeNonPayableEx {
 		throw new CdeNonPayableEx();

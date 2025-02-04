@@ -13,6 +13,10 @@ public abstract class Commande {
 	public Client getClient() {
 		return client;
 	}
+	
+	public int getNumero() {
+		return numero;
+	}
 
 	public final double getMontantTTC() {	
 		double ttc = getMontantHT();
